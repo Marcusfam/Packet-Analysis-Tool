@@ -1,0 +1,11 @@
+--- -	2022-11-15 17:20:50.950405835 +0000
++++ /dcs/21/u2107710/cs241/skeleton/src/dispatch.h	2022-11-15 16:33:58.313376735 +0000
+@@ -4,7 +4,7 @@
+ #include <pcap.h>
+ 
+ //was void before
+-void dispatch(const struct pcap_pkthdr *header,
++int dispatch(const struct pcap_pkthdr *header,
+               const unsigned char *packet,
+               int verbose);
+ 
